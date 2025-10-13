@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+:root {
+  --primary-color-900: #212529;
+  --primary-color-400: #ced4da;
+  --primary-color-100: #f8f9fa;
+
+  font-family: "Questrial", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: var(--primary-color-900);
+  color: var(--primary-color-100);
+  line-height: 1.5;
+  font-size: 1.1em;
+}
