@@ -1,8 +1,8 @@
-import circular_ligth from "../assets/circular_light.png";
+import circularLight from "../assets/circular_light.png";
 import { BtnCallToAction } from "../components/BtnCallToAction";
 import { GradientTitle } from "../components/GradientTitle";
 
-export function Hero() {
+export default function Hero() {
   return (
     <section
       id="hero"
@@ -12,7 +12,7 @@ export function Hero() {
         <div>
           <img
             className="absolute top-[80%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-0"
-            src={circular_ligth}
+            src={circularLight}
             alt="Effect"
           />
         </div>

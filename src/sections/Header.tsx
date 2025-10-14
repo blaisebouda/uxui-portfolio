@@ -1,6 +1,6 @@
 import blackProfile from "/black_profile.jpg";
 
-export function Header() {
+export default function Header() {
   return (
     <header className="bg-[var(--primary-color-900)/60] backdrop-blur-sm border border-white/10 rounded-full px-4 max-w-[800px] mx-auto h-[60px] flex items-center justify-between fixed top-4 left-0 right-0 z-50">
       <a className="flex items-center gap-2" href="#">
