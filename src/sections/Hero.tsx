@@ -1,6 +1,6 @@
 import circularLight from "../assets/circular_light.png";
 import { BtnCallToAction } from "../components/BtnCallToAction";
-import { GradientTitle } from "../components/GradientTitle";
+import GradientTitle from "../components/GradientTitle";
 
 export default function Hero() {
   return (

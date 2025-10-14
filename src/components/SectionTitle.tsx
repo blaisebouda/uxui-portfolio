@@ -1,4 +1,4 @@
-import { GradientTitle } from "./GradientTitle";
+import GradientTitle from "./GradientTitle";
 import arrowBottom from "../assets/arrow_bottom.svg";
 
 export default function SectionTitle({

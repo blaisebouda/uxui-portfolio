@@ -49,7 +49,7 @@ const services: Service[] = [
 
 export default function Services() {
   return (
-    <Section id="services" bg="/service_bg.jpg">
+    <Section id="services" bg="url('/pattern-1.png')">
       <SectionTitle>
         Qu’est-ce que je peux <br />
         faire pour vous ?
