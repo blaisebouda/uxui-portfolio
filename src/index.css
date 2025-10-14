@@ -16,3 +16,7 @@
 .dd {
   border: 1px solid white;
 }
+
+html {
+  scroll-behavior: smooth;
+}

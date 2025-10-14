@@ -9,7 +9,7 @@ export default function SectionTitle({
   return (
     <GradientTitle className="relative w-max">
       {children}
-      <span className="absolute top-14 right-0">
+      <span className="absolute top-14 right-[-40px]">
         <img src={arrowBottom} alt="arrow-bottom" />
       </span>
     </GradientTitle>

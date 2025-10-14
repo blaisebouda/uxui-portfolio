@@ -65,12 +65,12 @@ export default function Services() {
 
 const ServiceCard = ({ service }: { service: Service }) => {
   return (
-    <Card className="p-6 rounded-2xl flex flex-col gap-6">
+    <Card className="p-6 rounded-2xl flex flex-col gap-6 hover:border-[var(--primary-color-400)] transition-all ease-in-out duration-300">
       <div className="mt-2 relative flex items-center justify-center w-12 h-12 rounded-xl bg-white/25  border-2 border-white/40 backdrop-blur-sm">
         <span className="absolute w-full h-full bg-white/25 bg-white/20 rounded-xl z-[-1] border-2 border-white/10 rotate-[22deg] bottom-2.5 left-3"></span>
         <img src={service.icon} width={24} height={24} alt="svg" />
       </div>
-      <h3 className="text-2xl font-[Unbounded]">{service.title}</h3>
+      <h3 className="text-xl font-[Unbounded]">{service.title}</h3>
       <p className=" text-[var(--primary-color-400)]">{service.description}</p>
       <div className="flex flex-col gap-2">
         {service.items.map((item, index) => (
