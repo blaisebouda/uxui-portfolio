@@ -3,20 +3,24 @@ export default function Section({
   id,
   bg,
   className,
+  containerClassName,
 }: {
   children: React.ReactNode;
   id: string;
   bg?: string;
   className?: string;
+  containerClassName?: string;
 }) {
   return (
     <section
       id={id}
-      className={`pt-30 pb-30  ${
+      className={`pt-12 md:pt-30 pb-10 md:pb-30 ${
         bg ? `bg-[${bg}] bg-cover bg-center` : ""
       } ${className}`}
     >
-      <div className="relative w-max [max-width:1200px] mx-auto">
+      <div
+        className={`relative  [max-width:1200px] mx-auto ${containerClassName}`}
+      >
         {children}
       </div>
     </section>

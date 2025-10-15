@@ -31,8 +31,10 @@ const philosophy: Philosophy[] = [
 export default function Philosophy() {
   return (
     <Section id="philosophy" bg="url('/pattern-2.png')">
-      <GradientTitle className="text-center">Ma philosophie</GradientTitle>
-      <div className="relative flex flex-col gap-20 mt-30 after:absolute after:w-[6px] after:h-full after:bg-white/10 after:left-14 after:rounded-full">
+      <GradientTitle className="md:text-4xl text-center">
+        Ma philosophie
+      </GradientTitle>
+      <div className="relative max-w-[600px] mx-auto flex flex-col gap-20 mt-30 after:absolute after:w-[6px] after:h-full after:bg-white/10 after:left-14 after:rounded-full">
         {philosophy.map((philosophy) => (
           <PhilosophyItem key={philosophy.id} philosophy={philosophy} />
         ))}

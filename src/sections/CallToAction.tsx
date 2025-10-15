@@ -12,11 +12,13 @@ export default function CallToAction() {
         <div className=" flex flex-col items-center gap-2 ">
           <div className="flex items-center gap-2 border border-white/10 bg-white/10  px-2 rounded-full">
             <span className="w-1.5 h-1.5 bg-white rounded-full text-sm"></span>{" "}
-            Disponible{" "}
+            Je suis disponible
           </div>
-          <GradientTitle>Avez vous un Projet ?</GradientTitle>
+          <GradientTitle className="md:text-4xl">
+            Avez vous un Projet ?
+          </GradientTitle>
           <p className="text-lg text-[var(--primary-color-400)]">
-            Je suis disponible, discutions ensemble
+            Créons votre prochaine grande idée.
           </p>
         </div>
         <div className="pt-8 flex items-center gap-4 max-w-[440px] mx-auto ">

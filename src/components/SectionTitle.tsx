@@ -7,9 +7,9 @@ export default function SectionTitle({
   children: React.ReactNode;
 }) {
   return (
-    <GradientTitle className="relative w-max">
+    <GradientTitle className="relative w-max md:text-4xl">
       {children}
-      <span className="absolute top-14 right-[-40px]">
+      <span className="hidden md:block absolute top-14 right-[-40px]">
         <img src={arrowBottom} alt="arrow-bottom" />
       </span>
     </GradientTitle>

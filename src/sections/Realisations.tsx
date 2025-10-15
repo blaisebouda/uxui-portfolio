@@ -37,11 +37,15 @@ const realisations: Realisation[] = [
 ];
 export default function Realisations() {
   return (
-    <Section id="realisations" bg="url('/pattern-1.png')">
+    <Section
+      id="realisations"
+      bg="url('/pattern-1.png')"
+      containerClassName="max-w-[1040px]  mx-auto"
+    >
       <SectionTitle>
         Mes dernières <br /> réalisations
       </SectionTitle>
-      <div className="pt-30 grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="md:pt-30 pt-20 grid grid-cols-1 md:grid-cols-2 gap-6 ">
         {realisations.map((realisation, index) => (
           <RealisationItem key={index} realisation={realisation} />
         ))}
@@ -52,7 +56,7 @@ export default function Realisations() {
 
 const RealisationItem = ({ realisation }: { realisation: Realisation }) => {
   return (
-    <Card className="nth-child(2):mt-6 p-6 flex flex-col gap-6 rounded-2xl max-w-[440px] hover:border-[var(--primary-color-400)] transition-all ease-in-out duration-300">
+    <Card className="md:even:mt-6  h-max p-6 flex flex-col gap-6 rounded-2xl  hover:border-[var(--primary-color-400)] hover:scale-[0.95] transition-all ease-in-out duration-300">
       <img src={realisation.image} alt={realisation.title} />
       <h3 className="text-xl font-[Unbounded] ">{realisation.title}</h3>
       <p className="text-[var(--primary-color-400)]">
