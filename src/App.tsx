@@ -3,6 +3,7 @@ import Hero from "./sections/Hero";
 import Services from "./sections/Services";
 import Philosophy from "./sections/Philosophy";
 import Realisations from "./sections/Realisations";
+import CallToAction from "./sections/CallToAction";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Services />
       <Philosophy />
       <Realisations />
+      <CallToAction />
     </>
   );
 }

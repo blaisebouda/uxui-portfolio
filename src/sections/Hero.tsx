@@ -1,5 +1,5 @@
 import circularLight from "../assets/circular_light.png";
-import { BtnCallToAction } from "../components/BtnCallToAction";
+import BtnCallToAction from "../components/BtnCallToAction";
 import GradientTitle from "../components/GradientTitle";
 
 export default function Hero() {
@@ -24,7 +24,7 @@ export default function Hero() {
             Je crée des interfaces modernes et simple qui rendent vos
             utilisateurs heureux.
           </p>
-          <BtnCallToAction>Me contacter</BtnCallToAction>
+          <BtnCallToAction href="#contact">Me contacter</BtnCallToAction>
         </div>
       </div>
     </section>
