@@ -34,7 +34,7 @@ export default function Philosophy() {
       <GradientTitle className="md:text-4xl text-center">
         Ma philosophie
       </GradientTitle>
-      <div className="relative max-w-[600px] mx-auto flex flex-col gap-20 mt-30 after:absolute after:w-[6px] after:h-full after:bg-white/10 after:left-14 after:rounded-full">
+      <div className="relative max-w-[600px] mx-auto flex flex-col gap-20 mt-30 after:absolute after:w-[6px] after:h-full after:bg-white/10 after:left-8 md:after:left-14 after:rounded-full">
         {philosophy.map((philosophy) => (
           <PhilosophyItem key={philosophy.id} philosophy={philosophy} />
         ))}
@@ -45,10 +45,12 @@ export default function Philosophy() {
 
 const PhilosophyItem = ({ philosophy }: { philosophy: Philosophy }) => {
   return (
-    <div className="flex items-center gap-16 text-[var(--primary-color-700)] ">
-      <h1 className="text-4xl font-[Unbounded] font-bold">{philosophy.id}</h1>
+    <div className="flex items-center md:gap-16 gap-8 text-[var(--primary-color-700)] ">
+      <h1 className="md:text-4xl text-2xl font-[Unbounded] font-bold min-w-[24px]">
+        {philosophy.id}
+      </h1>
       <div>
-        <h1 className="text-4xl font-[Unbounded] font-bold">
+        <h1 className="md:text-4xl text-2xl font-[Unbounded] font-bold">
           {philosophy.title}
         </h1>
         <p className="pt-2 text-[var(--primary-color-400)] max-w-[500px]">
