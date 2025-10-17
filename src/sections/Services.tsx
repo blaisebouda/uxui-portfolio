@@ -5,6 +5,7 @@ import SectionTitle from "../components/SectionTitle";
 import cursor from "../assets/cursor.svg";
 import cursor_click from "../assets/cursor_click.svg";
 import cursor_screen from "../assets/cursor_screen.svg";
+import AnimatedContent from "../components/AnimatedContent";
 
 type Service = {
   title: string;
@@ -55,8 +56,10 @@ export default function Services() {
         faire pour vous ?
       </SectionTitle>
       <div className="pt-12 md:pt-30 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-5">
-        {services.map((service) => (
-          <ServiceCard key={service.title} service={service} />
+        {services.map((service, index) => (
+          <AnimatedContent delay={index * 0.2} key={index}>
+            <ServiceCard service={service} />
+          </AnimatedContent>
         ))}
       </div>
     </Section>

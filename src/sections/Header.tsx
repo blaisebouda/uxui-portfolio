@@ -1,4 +1,16 @@
 import blackProfile from "/black_profile.jpg";
+import gsap from "gsap";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+
+gsap.registerPlugin(ScrollToPlugin);
+
+const scrollTo = (id: string) => {
+  gsap.to(window, {
+    duration: 0.2,
+    scrollTo: { y: id },
+    ease: "power3.out",
+  });
+};
 
 export default function Header() {
   return (
@@ -16,16 +28,28 @@ export default function Header() {
         </a>
         <nav>
           <ul className="flex gap-6 text-[var(--primary-color-400)] font-semibold [&_li:hover]:text-white transition-all duration-300">
-            <li className="hidden md:block transition duration-300 ease-in-out">
+            <li
+              onClick={() => scrollTo("#services")}
+              className="hidden md:block transition duration-300 ease-in-out"
+            >
               <a href="#services">Services</a>
             </li>
-            <li className="hidden md:block transition duration-300 ease-in-out">
+            <li
+              onClick={() => scrollTo("#realisations")}
+              className="hidden md:block transition duration-300 ease-in-out"
+            >
               <a href="#realisations">Realisations</a>
             </li>
-            <li className="hidden md:block transition duration-300 ease-in-out">
+            <li
+              onClick={() => scrollTo("#avis")}
+              className="hidden md:block transition duration-300 ease-in-out"
+            >
               <a href="#avis">Avis</a>
             </li>
-            <li className="flex items-center gap-2 transition duration-300 ease-in-out">
+            <li
+              onClick={() => scrollTo("#contact")}
+              className="flex items-center gap-2 transition duration-300 ease-in-out"
+            >
               <span className="w-[6px] h-[6px] rounded-full bg-white block"></span>
               <a href="#contact">Me conctacter</a>
             </li>
