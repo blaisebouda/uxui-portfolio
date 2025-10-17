@@ -41,10 +41,10 @@ export default function Header() {
               <a href="#realisations">Realisations</a>
             </li>
             <li
-              onClick={() => scrollTo("#avis")}
+              onClick={() => scrollTo("#review")}
               className="hidden md:block transition duration-300 ease-in-out"
             >
-              <a href="#avis">Avis</a>
+              <a href="#review">Avis</a>
             </li>
             <li
               onClick={() => scrollTo("#contact")}

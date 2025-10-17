@@ -6,6 +6,7 @@ import Realisations from "./sections/Realisations";
 import CallToAction from "./sections/CallToAction";
 import Footer from "./sections/Footer";
 import SmoothScroll from "./components/SmoothScroll";
+import Review from "./sections/Review";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Services />
           <Philosophy />
           <Realisations />
+          <Review />
           <CallToAction />
         </main>
         <Footer />
