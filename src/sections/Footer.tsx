@@ -24,6 +24,7 @@ export default function Footer() {
         <a
           className="font-semibold hover:underline hover:text-white transition-all duration-300"
           href="#"
+          target="_blank"
         >
           @blaiseuiux
         </a>{" "}
@@ -31,6 +32,7 @@ export default function Footer() {
         <a
           className="font-semibold hover:underline hover:text-white transition-all duration-300"
           href="https://blaisebouda.github.io/portfolio"
+          target="_blank"
         >
           @blaisebouda
         </a>

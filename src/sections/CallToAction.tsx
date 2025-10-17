@@ -5,6 +5,25 @@ import circularLightSoft from "../assets/circular_light_soft.png";
 import whatsapp from "../assets/whatsapp.svg";
 import arrowTop from "../assets/arrow_top.svg";
 import AnimatedContent from "../components/AnimatedContent";
+import FaqAccordion from "../components/FaqAccordion";
+
+const faqs = [
+  {
+    question: "Pouvez-vous livrer le code source ?",
+    answer:
+      "Oui, je peux vous livrer le code source à la fin du projet, avec un coût supplémentaire clairement défini à l’avance.",
+  },
+  {
+    question: "Combien de temps dure la réalisation d’un projet ?",
+    answer:
+      "La durée dépend de la complexité du projet. En général, un projet prend entre 2 et 6 semaines.",
+  },
+  {
+    question: "Proposez-vous des services de motion design ?",
+    answer:
+      "Non, je ne propose pas de motion design, mais je peux vous recommander un professionnel de confiance.",
+  },
+];
 
 export default function CallToAction() {
   return (
@@ -49,6 +68,10 @@ export default function CallToAction() {
           />
         </div>
       </AnimatedContent>
+      <div className="md:pt-20 mt-12   mx-auto">
+        <GradientTitle className="text-center">FAQ</GradientTitle>
+        <FaqAccordion faqs={faqs} />
+      </div>
     </section>
   );
 }

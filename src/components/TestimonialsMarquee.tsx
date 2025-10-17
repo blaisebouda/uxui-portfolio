@@ -17,7 +17,6 @@ const TestimonialsMarquee: React.FC<TestimonialsMarqueeProps> = ({
 
   return (
     <div className="relative w-full max-w-[1200px] mx-auto overflow-hidden">
-      {/* Dégradés gauche/droite */}
       <div
         className={`pointer-events-none absolute inset-y-0 left-0 w-[200px] z-10 bg-gradient-to-r from-[${gradientColor}] to-transparent`}
       />
@@ -25,14 +24,12 @@ const TestimonialsMarquee: React.FC<TestimonialsMarqueeProps> = ({
         className={`pointer-events-none absolute inset-y-0 right-0 w-[200px] z-10 bg-gradient-to-l from-[${gradientColor}] to-transparent`}
       />
 
-      {/* Ligne de témoignages */}
       <div
         className="flex gap-5 w-max"
         style={{
           animation: `${animationName} ${speed} linear infinite`,
         }}
       >
-        {/* On duplique le contenu pour créer un loop continu */}
         {[...children, ...children].map((item, index) => (
           <div key={index}>{item}</div>
         ))}
