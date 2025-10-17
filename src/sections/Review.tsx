@@ -3,6 +3,7 @@ import AnimatedContent from "../components/AnimatedContent";
 import SectionTitle from "../components/SectionTitle";
 import { Card } from "../components/Card";
 import profile from "/black_profile.jpg";
+import TestimonialsMarquee from "../components/TestimonialsMarquee";
 
 export default function Review() {
   return (
@@ -13,9 +14,11 @@ export default function Review() {
           <br /> disent de Moi
         </SectionTitle>
         <div className="md:pt-30 pt-20 flex  gap-4">
-          <ReviewItem />
-          <ReviewItem />
-          <ReviewItem />
+          <TestimonialsMarquee gradientColor="var(--primary-color-900)">
+            <ReviewItem />
+            <ReviewItem />
+            <ReviewItem />
+          </TestimonialsMarquee>
         </div>
       </AnimatedContent>
     </Section>
