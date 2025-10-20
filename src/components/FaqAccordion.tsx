@@ -32,7 +32,7 @@ const FaqAccordion: React.FC<FaqAccordionProps> = ({ faqs, className }) => {
               onClick={() => toggle(index)}
               aria-expanded={isOpen}
             >
-              <span className="text-lg font-medium text-white">
+              <span className="text-lg font-semibold font-medium text-white/80">
                 {faq.question}
               </span>
               <ChevronDown

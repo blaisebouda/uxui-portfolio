@@ -15,7 +15,7 @@ export default function Section({
     <section
       id={id}
       className={`pt-12 md:pt-30 pb-10 md:pb-30 ${
-        bg ? `bg-[${bg}] bg-cover bg-center` : ""
+        bg ? `${bg} bg-cover bg-center` : ""
       } ${className}`}
     >
       <div

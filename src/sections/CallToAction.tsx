@@ -9,6 +9,10 @@ import FaqAccordion from "../components/FaqAccordion";
 
 const faqs = [
   {
+    question: "Quels sont vos disponibilités ?",
+    answer: "Je suis actuellement disponible.",
+  },
+  {
     question: "Pouvez-vous livrer le code source ?",
     answer:
       "Oui, je peux vous livrer le code source à la fin du projet, avec un coût supplémentaire clairement défini à l’avance.",
@@ -19,9 +23,9 @@ const faqs = [
       "La durée dépend de la complexité du projet. En général, un projet prend entre 2 et 6 semaines.",
   },
   {
-    question: "Proposez-vous des services de motion design ?",
+    question: "Proposez-vous des services de graphismes et de motion design ?",
     answer:
-      "Non, je ne propose pas de motion design, mais je peux vous recommander un professionnel de confiance.",
+      "Non, je ne propose pas de graphismes et de motion design pour l'instant, mais je peux vous recommander un professionnel de confiance.",
   },
 ];
 
@@ -68,9 +72,12 @@ export default function CallToAction() {
           />
         </div>
       </AnimatedContent>
-      <div className="md:pt-20 mt-12   mx-auto">
-        <GradientTitle className="text-center">FAQ</GradientTitle>
-        <FaqAccordion faqs={faqs} />
+      <div className="md:pt-20 mt-12 md:pb-20 pb-12 mx-auto">
+        <GradientTitle className="mx-auto ">FAQ</GradientTitle>
+        <p className="text-center md:text-lg text-[var(--primary-color-400)] pt-2">
+          Les questions fréquentes
+        </p>
+        <FaqAccordion faqs={faqs} className="pt-12" />
       </div>
     </section>
   );

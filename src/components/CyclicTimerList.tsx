@@ -12,7 +12,7 @@ type CyclicTimerListProps = {
 };
 
 const CyclicTimerList: React.FC<CyclicTimerListProps> = ({
-  duration = 3000,
+  duration = 5000,
   activeClassName = "active",
   inactiveClassName = "",
   children,

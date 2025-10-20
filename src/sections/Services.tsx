@@ -50,7 +50,7 @@ const services: Service[] = [
 
 export default function Services() {
   return (
-    <Section id="services" bg="url('/pattern-1.png')">
+    <Section id="services" bg="bg-[url('/pattern-1.png')]">
       <SectionTitle>
         Qu’est-ce que je peux <br />
         faire pour vous ?

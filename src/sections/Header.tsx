@@ -14,7 +14,7 @@ const scrollTo = (id: string) => {
 
 export default function Header() {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 p-2">
+    <header className="fixed top-0 left-0 right-0 z-3 p-2">
       <div className="bg-[var(--primary-color-900)/60] backdrop-blur-sm border border-white/10 rounded-full px-4 max-w-[800px] mx-auto h-[60px] flex items-center justify-between">
         <a className="flex items-center gap-2" href="#">
           <img
@@ -24,7 +24,7 @@ export default function Header() {
             src={blackProfile}
             alt="Profile"
           />
-          <span className="font-[Unbounded]">blaiseuxui</span>
+          <span className="font-[Unbounded]">blaiseuiux</span>
         </a>
         <nav>
           <ul className="flex gap-6 text-[var(--primary-color-400)] font-semibold [&_li:hover]:text-white transition-all duration-300">
@@ -44,7 +44,7 @@ export default function Header() {
               onClick={() => scrollTo("#review")}
               className="hidden md:block transition duration-300 ease-in-out"
             >
-              <a href="#review">Avis</a>
+              <a href="#review">Avis(3)</a>
             </li>
             <li
               onClick={() => scrollTo("#contact")}

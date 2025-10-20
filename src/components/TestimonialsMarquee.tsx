@@ -4,24 +4,22 @@ type TestimonialsMarqueeProps = {
   children: React.ReactNode[];
   speed?: string; // Exemple: "30s" ou "50s"
   reverse?: boolean;
-  gradientColor?: string;
 };
 
 const TestimonialsMarquee: React.FC<TestimonialsMarqueeProps> = ({
   children,
   speed = "30s",
   reverse = false,
-  gradientColor = "#060010",
 }) => {
   const animationName = reverse ? "marquee-right" : "marquee-left";
 
   return (
     <div className="relative w-full max-w-[1200px] mx-auto overflow-hidden">
       <div
-        className={`pointer-events-none absolute inset-y-0 left-0 w-[200px] z-10 bg-gradient-to-r from-[${gradientColor}] to-transparent`}
+        className={`pointer-events-none absolute inset-y-0 left-0 w-[200px] z-10 bg-gradient-to-r from-[var(--primary-color-900)] to-transparent`}
       />
       <div
-        className={`pointer-events-none absolute inset-y-0 right-0 w-[200px] z-10 bg-gradient-to-l from-[${gradientColor}] to-transparent`}
+        className={`pointer-events-none absolute inset-y-0 right-0 w-[200px] z-10 bg-gradient-to-l from-[var(--primary-color-900)] to-transparent`}
       />
 
       <div

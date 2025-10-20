@@ -13,7 +13,7 @@ export default function Footer() {
         </a>
         <a
           className="hover:text-white transition-all duration-300"
-          href="https://linkedin.com/in/blaisebouda/"
+          href="https://www.linkedin.com/in/blaisebouda/"
           target="_blank"
         >
           <Linkedin />

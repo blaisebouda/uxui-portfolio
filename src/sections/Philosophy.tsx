@@ -47,9 +47,9 @@ export default function Philosophy() {
   };
 
   return (
-    <Section id="philosophy" bg="url('/pattern-2.png')">
+    <Section id="philosophy" bg="bg-[url('/pattern-2.png')]">
       <AnimatedContent>
-        <GradientTitle className="md:text-4xl text-center">
+        <GradientTitle className="md:text-4xl mx-auto">
           Ma philosophie
         </GradientTitle>
       </AnimatedContent>
