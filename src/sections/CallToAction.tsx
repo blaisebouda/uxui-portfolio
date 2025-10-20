@@ -47,13 +47,19 @@ export default function CallToAction() {
             </p>
           </div>
           <div className="pt-8 flex items-center md:gap-4 gap-2 max-w-[440px] mx-auto ">
-            <BtnCallToAction className="w-full">
+            <BtnCallToAction
+              className="w-full"
+              href="mailto:blaisebouda05@gmail.com"
+            >
               <span>
                 <Mail />
               </span>
               Mail
             </BtnCallToAction>
-            <BtnCallToAction className="w-full">
+            <BtnCallToAction
+              className="w-full"
+              href="https://wa.me/22666427048"
+            >
               <span>
                 <img src={whatsapp} alt="whatsapp" />
               </span>
