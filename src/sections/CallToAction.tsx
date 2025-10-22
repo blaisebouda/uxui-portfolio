@@ -31,7 +31,7 @@ const faqs = [
 
 export default function CallToAction() {
   return (
-    <section id="contact" className="md:pt-30 pt-20 md:pb-30 pb-20">
+    <section id="contact" className="px-4 md:pt-30 pt-20 md:pb-30 pb-20">
       <AnimatedContent threshold={0.2}>
         <div className="relative overflow-hidden w-full max-w-[1200px] mx-auto bg-black/40 p-6 md:p-12 rounded-2xl backdrop-blur-sm border border-white/25">
           <div className=" flex flex-col items-center gap-2 ">

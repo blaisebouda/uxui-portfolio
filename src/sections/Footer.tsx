@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="flex items-center gap-2">
         <a
           className="hover:text-white transition-all duration-300"
-          href="#"
+          href="https://web.facebook.com/profile.php?id=61582689866720"
           target="_blank"
         >
           <Facebook />

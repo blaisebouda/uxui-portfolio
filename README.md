@@ -90,25 +90,6 @@ Cette commande :
 2. Build l'application optimisée pour la production
 3. Déploie automatiquement le dossier `dist` sur la branche `gh-pages`
 
-## 📁 Structure du projet
-
-```
-uxui-portfolio/
-├── src/                  # Code source de l'application
-│   ├── components/       # Composants React réutilisables
-│   ├── assets/          # Images, fonts et autres ressources
-│   ├── styles/          # Fichiers CSS/Tailwind personnalisés
-│   └── App.tsx          # Composant principal
-├── public/              # Fichiers statiques
-├── dist/                # Build de production (généré)
-├── node_modules/        # Dépendances (généré)
-├── package.json         # Configuration npm et scripts
-├── vite.config.ts       # Configuration Vite
-├── tsconfig.json        # Configuration TypeScript
-├── tailwind.config.js   # Configuration Tailwind CSS
-└── eslint.config.js     # Configuration ESLint
-```
-
 ## 🔧 Configuration
 
 ### Tailwind CSS
@@ -192,7 +173,7 @@ Les contributions sont les bienvenues ! Pour contribuer :
 
 ## 📝 License
 
-Ce projet est sous licence privée. Tous droits réservés.
+Ce projet est sous licence publique. Tous droits réservés.
 
 ## 📧 Contact
 

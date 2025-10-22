@@ -34,7 +34,7 @@ export default function Hero() {
             </p>
           </AnimatedContent>
           <AnimatedContent threshold={0.05} delay={0.6}>
-            <BtnCallToAction>Me contacter</BtnCallToAction>
+            <BtnCallToAction href="#contact">Me contacter</BtnCallToAction>
           </AnimatedContent>
         </div>
       </div>

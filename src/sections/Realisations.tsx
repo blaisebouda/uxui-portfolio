@@ -22,7 +22,7 @@ type Realisation = {
 
 const realisations: Realisation[] = [
   {
-    title: "Landing Page – Dev portfolio ",
+    title: "Landing Page – UI/UX portfolio ",
     description:
       "Conception d’une landing page moderne regroupant mes principales réalisations en design.",
     cover: uxui,

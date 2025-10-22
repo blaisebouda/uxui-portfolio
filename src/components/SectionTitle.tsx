@@ -9,7 +9,7 @@ export default function SectionTitle({
   children: React.ReactNode;
 }) {
   return (
-    <AnimatedContent threshold={0.2}>
+    <AnimatedContent threshold={0.3}>
       <GradientTitle className="relative w-max md:text-4xl">
         {children}
         <FadeContent delay={1}>
