@@ -51,7 +51,7 @@ const services: Service[] = [
 export default function Services() {
   return (
     <Section id="services" bg="bg-[url('/pattern-1.png')]">
-      <SectionTitle>
+      <SectionTitle className="font-normal md:font-bold">
         Qu’est-ce que je peux <br />
         faire pour vous ?
       </SectionTitle>
@@ -68,7 +68,7 @@ export default function Services() {
 
 const ServiceCard = ({ service }: { service: Service }) => {
   return (
-    <Card className="p-6 rounded-2xl flex flex-col gap-6 hover:bg-white/10 hover:border-[var(--primary-color-400)] transition-all ease-in-out duration-300">
+    <Card className="md:p-6 p-4 rounded-2xl flex flex-col gap-6 hover:bg-white/10 hover:border-[var(--primary-color-400)] transition-all ease-in-out duration-300">
       <div className="mt-2 relative flex items-center justify-center w-12 h-12 rounded-xl bg-white/25  border-2 border-white/40 backdrop-blur-sm">
         <span className="absolute w-full h-full bg-white/25 bg-white/20 rounded-xl z-[-1] border-2 border-white/10 rotate-[22deg] bottom-2.5 left-3"></span>
         <img src={service.icon} width={24} height={24} alt="svg" />

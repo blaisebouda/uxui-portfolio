@@ -120,7 +120,7 @@ const RealisationItem = ({
   return (
     <Card
       onClick={() => onOpen?.(realisation)}
-      className="cursor-pointer md:even:mt-6  h-max p-6 flex flex-col gap-6 rounded-2xl  hover:border-[var(--primary-color-400)] hover:scale-[0.95] transition-all ease-in-out duration-300"
+      className="cursor-pointer md:even:mt-6  h-max md:p-6 p-4 flex flex-col gap-6 rounded-2xl  hover:border-[var(--primary-color-400)] hover:scale-[0.95] transition-all ease-in-out duration-300"
     >
       <img
         className="rounded-lg"

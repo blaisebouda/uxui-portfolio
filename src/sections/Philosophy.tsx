@@ -33,7 +33,7 @@ const philosophy: Philosophy[] = [
 
 export default function Philosophy() {
   const cyclicTimerListClassName =
-    "relative max-w-[600px] mx-auto flex flex-col gap-20 mt-30 after:absolute after:w-[6px] after:h-full after:bg-white/10 after:left-8 md:after:left-14 after:rounded-full before:absolute before:w-[6px] before:h-[100px] before:bg-white/100 before:left-8 md:before:left-14 before:rounded-full before:transition-all before:duration-300";
+    "relative max-w-[600px] mx-auto flex flex-col gap-20 mt-20 md:mt-30 after:absolute after:w-[6px] after:h-full after:bg-white/10 after:left-8 md:after:left-14 after:rounded-full before:absolute before:w-[6px] before:h-[100px] before:bg-white/100 before:left-8 md:before:left-14 before:rounded-full before:transition-all before:duration-300";
   const [cyclicClassName, setCyclicClassName] = useState(
     `${cyclicTimerListClassName} before:top-0`
   );

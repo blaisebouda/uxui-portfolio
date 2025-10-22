@@ -5,12 +5,14 @@ import FadeContent from "./FadeContent";
 
 export default function SectionTitle({
   children,
+  className,
 }: {
   children: React.ReactNode;
+  className?: string;
 }) {
   return (
     <AnimatedContent threshold={0.3}>
-      <GradientTitle className="relative w-max md:text-4xl">
+      <GradientTitle className={`relative w-max md:text-4xl ${className}`}>
         {children}
         <FadeContent delay={1}>
           <span className="hidden md:block absolute top-14 right-[-40px]">
