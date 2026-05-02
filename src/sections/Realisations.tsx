@@ -1,15 +1,15 @@
+import { ChevronRight, SquareArrowOutUpRight } from "lucide-react";
+import { useState } from "react";
+import { Card } from "../components/Card";
+import Drawer from "../components/Drawer";
 import Section from "../components/Section";
 import SectionTitle from "../components/SectionTitle";
-import { Card } from "../components/Card";
-import { ChevronRight, SquareArrowOutUpRight } from "lucide-react";
-import unionHalal from "/projects/unionhalal.jpg";
-import unionHalalScreenshot from "/projects/unionhalal_screenshot.jpg";
+import tiim from "/projects/tiim.jpg";
 import tlo from "/projects/tlo.jpg";
 import tloScreenshot from "/projects/tlo_screenshot.jpg";
-import portfolio from "/projects/portfolio.jpg";
+import unionHalal from "/projects/unionhalal.jpg";
+import unionHalalScreenshot from "/projects/unionhalal_screenshot.jpg";
 import uxui from "/projects/uxui.jpg";
-import Drawer from "../components/Drawer";
-import { useState } from "react";
 
 type Realisation = {
   title: string;
@@ -22,21 +22,12 @@ type Realisation = {
 
 const realisations: Realisation[] = [
   {
-    title: "Landing Page – UI/UX portfolio ",
+    title: "Landing Page – TIIM ",
     description:
-      "Conception d’une landing page moderne regroupant mes principales réalisations en design.",
-    cover: uxui,
-    btn_label: "Voir la maquette Figma",
-    externalLink:
-      "https://www.figma.com/proto/sG5JVC56Vh2PNJ1JsAdceO/For-me?node-id=3085-3&p=f&t=FqNv6GGRLKsxzvDZ-0&scaling=min-zoom&content-scaling=fixed&page-id=3085%3A2",
-  },
-  {
-    title: "Landing Page – Dev portfolio ",
-    description:
-      "Landing page simple regroupant mes principales contributions en tant que développer Fullstack.",
-    cover: portfolio,
-    btn_label: "Visiter le site",
-    externalLink: "https://blaisebouda.github.io/portfolio/",
+      "Conception de la landing de Tiim. Une plateforme pour trouver des médicaments en quelques secondes.",
+    cover: tiim,
+    btn_label: "Voir le site",
+    externalLink: "https://fasotiim.com/",
   },
   {
     title: "Union Halal",
@@ -45,6 +36,15 @@ const realisations: Realisation[] = [
     cover: unionHalal,
     btn_label: "Voir les captures d'écran",
     screenshot: unionHalalScreenshot,
+  },
+  {
+    title: "Landing Page – UI/UX portfolio ",
+    description:
+      "Conception d’une landing page moderne regroupant mes principales réalisations en design.",
+    cover: uxui,
+    btn_label: "Voir la maquette Figma",
+    externalLink:
+      "https://www.figma.com/proto/sG5JVC56Vh2PNJ1JsAdceO/For-me?node-id=3085-3&p=f&t=FqNv6GGRLKsxzvDZ-0&scaling=min-zoom&content-scaling=fixed&page-id=3085%3A2",
   },
   {
     title: "Tlo App ",
@@ -102,7 +102,7 @@ export default function Realisations() {
                 realisation={realisation}
                 onOpen={handleOpen}
               />
-            )
+            ),
           )}
         </div>
       </Section>
