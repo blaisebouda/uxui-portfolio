@@ -10,6 +10,8 @@ import tloScreenshot from "/projects/tlo_screenshot.jpg";
 import unionHalal from "/projects/unionhalal.jpg";
 import unionHalalScreenshot from "/projects/unionhalal_screenshot.jpg";
 import uxui from "/projects/uxui.jpg";
+import zilopay from "/projects/zilopay.jpg";
+import zilopayScreenshot from "/projects/zilopay_screenshot.png";
 
 type Realisation = {
   title: string;
@@ -53,6 +55,14 @@ const realisations: Realisation[] = [
     cover: tlo,
     btn_label: "Voir les captures d'écran",
     screenshot: tloScreenshot,
+  },
+  {
+    title: "Zillopay",
+    description:
+      "Landing page et conception UI/UX pour une application de paiement et de transfert d'argent.",
+    cover: zilopay,
+    btn_label: "Voir les captures d'écran",
+    screenshot: zilopayScreenshot,
   },
 ];
 export default function Realisations() {
